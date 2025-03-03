@@ -1,0 +1,33 @@
+As described in the paper: 
+
+"\section{Parameter Design Methodology}
+
+The proposed hybrid modulation scheme requires co-optimization of duty cycle \(D\) and phase shift \(\varphi\) to achieve three critical objectives: 
+\begin{itemize}
+\item[1)] Maintain zero-voltage switching (ZVS) across all active switches
+\item[2)] Minimize circulating current (Fig. \ref{fig_Irms}) 
+\item[3)] Ensure stable operation under 20\% input voltage deviation
+\end{itemize}
+
+\subsection{Leakage Inductance Optimization}
+Base the equations (\ref{equ_normalized current}), (\ref{equ_normalized power}), (\ref{equ_Izvs1}) and (\ref{euq_LargeThanzvs}) ,the leakage inductance \(L_k\) directly governs three key performance metrics:
+\begin{equation}
+\begin{cases}
+I_{\text{rms}} \propto \frac{1}{L_k} & \text{(Conduction loss)}\\
+P_{\text{max}} \propto \frac{1}{L_k} & \text{(Power transfer capability)}  \\
+ZVS_{\text{range}} \propto \sqrt{L_k} & \text{(Soft-switching boundary)}
+\end{cases}
+\end{equation}
+
+\(L_k\)=35 \(\mu\)H was selected to ensure the widest ZVS range and minimal circulating current. Specifically, it achieves less than 5\% current ripple at full load, and 12.5 W total losses at rated power, compared to 18.4 W with \(L_k\)=80 \(\mu\)H.
+
+\subsection{Transformer Design}
+The integrated magnetic structure, which combines leakage inductance with the main transformer, results in a 36\% reduction in volume compared to conventional designs, decreasing from 213.1 cm\(^3\) \cite{pengActiveVoltageQuadrupler2024} to 136.1 cm\(^3\) as shown in Fig. \ref{fig_TPC prototype}. Their magnetic component volume are summarized and compared with the conventional structures in Table \ref{tab_volume_comparison}. The key design parameters are as follows: 
+
+The turns ratio is determined by the equation:
+\[
+n = \frac{4V_{pv,\text{min}}}{DV_{dc}} = \frac{4 \times 15}{D \times 800} = \left(\frac{0.3}{D}\right):4
+\]
+For practical implementation, the turns ratio is adjusted to 1:4. The transformer uses a PC40 core and incorporates the following optimizations:
+
+Leakage inductance is controlled by adjusting the airgap between 0.5-1.2mm, achieving a target \(L_k\) of 35\(\mu\)H. Additionally, the transformer employs an interleaved winding structure, which reduces AC resistance compared to conventional sandwich winding, thereby balancing the losses."
