@@ -46,7 +46,7 @@ We encourage researchers to:
 📢 **This work has been published in IEEE Access**: [https://ieeexplore.ieee.org/document/11008631](https://ieeexplore.ieee.org/document/11008631)
 
 License: MIT Open Source (Commercial use permitted with attribution)  
-Maintainer: Yuchong Peng | Last Update: 2025-03  
+Maintainer: Yuchong Peng | Last Update: 2025-05  
 
 ---
 
@@ -98,4 +98,4 @@ Maintainer: Yuchong Peng | Last Update: 2025-03
 📢 **该研究成果已发表在IEEE Access期刊**：[https://ieeexplore.ieee.org/document/11008631](https://ieeexplore.ieee.org/document/11008631)
 
 许可证：MIT开源协议（允许商业使用并需注明来源）  
-维护者：彭宇冲 | 最后更新：2025-03
+维护者：彭毓崇 | 最后更新：2025-05
