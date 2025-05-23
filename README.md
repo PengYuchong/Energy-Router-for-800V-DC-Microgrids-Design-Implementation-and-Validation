@@ -1,4 +1,4 @@
-# Energy Router for 800V DC Microgrids: Design, Implementation, and Validation
+# Active Voltage Quadrupler Rectifier-Based Ultra-High Boost Ratio Multidirectional Energy Router in 800V DC Microgrids 
 
 This repository provides full open-access resources for a high-efficiency three-port energy router targeting 800V DC microgrid applications. The system enables intelligent power management between photovoltaic (PV) panels (15-25V), energy storage batteries (40-50V), and an 800V DC bus through three key technological advancements:
 
